@@ -131,6 +131,8 @@ android {
             applicationId 'com.styletest.direcional'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.styletest"
+            resValue "string", "rn_config_reader_custom_package", "com.styletest"
+            buildConfigField "String", "TARGET_KEY", "\"DIRECIONAL\""
         }
 
         riva {
@@ -138,6 +140,8 @@ android {
             applicationId 'com.styletest.riva'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.styletest"
+            resValue "string", "rn_config_reader_custom_package", "com.styletest"
+            buildConfigField "String", "TARGET_KEY", "\"RIVA\""
         }
     }
 

@@ -1,9 +1,11 @@
-import { STYLE_KEYS } from "../StyleKey";
+import TargetKey, { TARGET_KEYS } from "../TargetKey";
 import DirecionalStyle from "./DirecionalStyle";
 import RivaStyle from "./RivaStyle";
 
-export default
+const styleSet =
 {
-    [STYLE_KEYS.DIRECIONAL]: DirecionalStyle,
-    [STYLE_KEYS.RIVA]: RivaStyle
+    [TARGET_KEYS.DIRECIONAL]: DirecionalStyle,
+    [TARGET_KEYS.RIVA]: RivaStyle
 }
+
+export default styleSet[TargetKey];

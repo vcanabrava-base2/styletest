@@ -1,9 +1,11 @@
-import { STYLE_KEYS } from "../StyleKey";
+import TargetKey, { TARGET_KEYS } from "../TargetKey";
 import DirecionalStrings from "./DirecionalStrings";
 import RivaStrings from "./RivaStrings";
 
-export default
+const stringSet =
 {
-    [STYLE_KEYS.DIRECIONAL]: DirecionalStrings,
-    [STYLE_KEYS.RIVA]: RivaStrings
+    [TARGET_KEYS.DIRECIONAL]: DirecionalStrings,
+    [TARGET_KEYS.RIVA]: RivaStrings
 }
+
+export default stringSet[TargetKey]
